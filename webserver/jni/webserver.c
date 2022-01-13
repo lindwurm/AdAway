@@ -92,9 +92,9 @@ struct settings parse_cli_parameters(int argc, char *argv[]) {
         if (strcmp(argv[i], "--resources") == 0 && i < argc - 1) {
             char *resource_path = argv[++i];
             strcpy(s.ssl_cert, resource_path);
-            strcat(s.ssl_cert, "/localhost-2108.crt");
+            strcat(s.ssl_cert, "/localhost-2201.crt");
             strcpy(s.ssl_key, resource_path);
-            strcat(s.ssl_key, "/localhost-2108.key");
+            strcat(s.ssl_key, "/localhost-2201.key");
             strcpy(s.icon_path, resource_path);
             strcat(s.icon_path, "/icon.svg");
             strcpy(s.test_path, resource_path);
